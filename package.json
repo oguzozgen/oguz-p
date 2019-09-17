@@ -1,7 +1,7 @@
 {
   "name": "oguz-p",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage":"https://oguzozgen.github.io/oguz-p/",
   "dependencies": {
     "react": "^16.9.0",
