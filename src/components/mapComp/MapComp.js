@@ -4,6 +4,8 @@ import 'leaflet/dist/leaflet.css'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet';
 import IntroCardComp from '../introCardComp/IntroCardComp'
+import SkillsetCardComp from '../skillsetCardComp/SkillsetCardComp'
+import './MapComp.css';
 
 
 delete L.Icon.Default.prototype._getIconUrl;
@@ -19,7 +21,7 @@ L.Icon.Default.mergeOptions({
 
 function MapComp(){    
     const [lat,setLat]=useState( 
-        -59.05293398570514);
+        -65.05293398570514);
     const [lng,setLng]=useState( -15.0);
     const [zoom,setZoom]=useState(2.4);
     const [position,setPosition]=useState([lat, lng]);
@@ -35,7 +37,7 @@ function MapComp(){
                         />
                         <Marker position={position}>
                         <Popup>
-                             <IntroCardComp/>
+                             <SkillsetCardComp/>
                         </Popup>
                         </Marker>
                     </Map>
