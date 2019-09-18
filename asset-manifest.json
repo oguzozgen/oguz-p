@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/oguz-p/static/css/main.0068e965.chunk.css",
-    "main.js": "/oguz-p/static/js/main.607e15b0.chunk.js",
-    "main.js.map": "/oguz-p/static/js/main.607e15b0.chunk.js.map",
+    "main.css": "/oguz-p/static/css/main.1d503e3c.chunk.css",
+    "main.js": "/oguz-p/static/js/main.2c8b3779.chunk.js",
+    "main.js.map": "/oguz-p/static/js/main.2c8b3779.chunk.js.map",
     "runtime~main.js": "/oguz-p/static/js/runtime~main.2f221e6b.js",
     "runtime~main.js.map": "/oguz-p/static/js/runtime~main.2f221e6b.js.map",
     "static/css/2.098bc035.chunk.css": "/oguz-p/static/css/2.098bc035.chunk.css",
-    "static/js/2.7f5647bb.chunk.js": "/oguz-p/static/js/2.7f5647bb.chunk.js",
-    "static/js/2.7f5647bb.chunk.js.map": "/oguz-p/static/js/2.7f5647bb.chunk.js.map",
+    "static/js/2.17374cf1.chunk.js": "/oguz-p/static/js/2.17374cf1.chunk.js",
+    "static/js/2.17374cf1.chunk.js.map": "/oguz-p/static/js/2.17374cf1.chunk.js.map",
     "index.html": "/oguz-p/index.html",
-    "precache-manifest.7c445f67b82f267ced83fdc37ae96e78.js": "/oguz-p/precache-manifest.7c445f67b82f267ced83fdc37ae96e78.js",
+    "precache-manifest.6a99d8641555374e8fc77fddd0c0d812.js": "/oguz-p/precache-manifest.6a99d8641555374e8fc77fddd0c0d812.js",
     "service-worker.js": "/oguz-p/service-worker.js",
     "static/css/2.098bc035.chunk.css.map": "/oguz-p/static/css/2.098bc035.chunk.css.map",
-    "static/css/main.0068e965.chunk.css.map": "/oguz-p/static/css/main.0068e965.chunk.css.map",
+    "static/css/main.1d503e3c.chunk.css.map": "/oguz-p/static/css/main.1d503e3c.chunk.css.map",
     "static/media/custom_marker_x2.png": "/oguz-p/static/media/custom_marker_x2.fe2b2561.png"
   }
 }

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "39eaf8b5583b555672f43fc7f116c46f",
+    "revision": "213f16fba9d4b20a6ebe4596c4aa8338",
     "url": "/oguz-p/index.html"
   },
   {
-    "revision": "d37beb6d69c1f3c862c4",
+    "revision": "fee1ae2900a1b3b1756e",
     "url": "/oguz-p/static/css/2.098bc035.chunk.css"
   },
   {
-    "revision": "87b94876b534e81eb013",
-    "url": "/oguz-p/static/css/main.0068e965.chunk.css"
+    "revision": "de33818476ba56ffd826",
+    "url": "/oguz-p/static/css/main.1d503e3c.chunk.css"
   },
   {
-    "revision": "d37beb6d69c1f3c862c4",
-    "url": "/oguz-p/static/js/2.7f5647bb.chunk.js"
+    "revision": "fee1ae2900a1b3b1756e",
+    "url": "/oguz-p/static/js/2.17374cf1.chunk.js"
   },
   {
-    "revision": "87b94876b534e81eb013",
-    "url": "/oguz-p/static/js/main.607e15b0.chunk.js"
+    "revision": "de33818476ba56ffd826",
+    "url": "/oguz-p/static/js/main.2c8b3779.chunk.js"
   },
   {
     "revision": "9704eec8293eb137b72a",
