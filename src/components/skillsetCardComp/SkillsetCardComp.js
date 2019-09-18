@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
@@ -49,6 +50,10 @@ const useStyles = makeStyles(theme => ({
             paddingTop:0,
             paddingBottom:0,
             borderLeft: "12px solid #dfdfdf"
+        },
+        actionBackBtn:{
+            marginTop:-4,
+            marginBottom:-12
         }
 }));
 function SkillsetCardComp(){
@@ -76,6 +81,7 @@ function SkillsetCardComp(){
             "name":"JS",
             "role":"Front End",
             "abilities":[
+                "UI & UX",
                 "React Hooks",
                 "ES5 - OOP",
                 "Data Visualization"
@@ -132,18 +138,18 @@ function SkillsetCardComp(){
                                         <List >
                                             {
                                                 item.abilities.map((ability,k)=>{
-                                            return(  
-                                                    <ListItem className={classes.expantionListItem} key={k}>
+                                                return(  
+                                                        <ListItem className={classes.expantionListItem} key={k}>
 
-                                                            <ListItemText                                                         
-                                                            >
-                                                                    <Typography variant="h8">
-                                                                     {ability} 
-                                                                    </Typography>
-                                                            </ListItemText>
-                                                        </ListItem>
-                                                )
-                                            })
+                                                                <ListItemText                                                         
+                                                                >
+                                                                        <Typography variant="h8">
+                                                                        {ability} 
+                                                                        </Typography>
+                                                                </ListItemText>
+                                                            </ListItem>
+                                                    )
+                                                })
                                             }
                                         </List>
                                     </ExpansionPanelDetails>
@@ -154,9 +160,12 @@ function SkillsetCardComp(){
                     </div>
                 </CardContent>                    
             <CardActions style={{justifyContent:'center'}}>
-                <Button size="small">
+            <Button variant="outlined" size="small" >
+                <Link to="/" className={classes.actionBackBtn}>
                     <ChevronLeftIcon fontSize="large"/>
-                </Button>
+                </Link>
+            </Button>
+            
             </CardActions>
         </Card>   
     );

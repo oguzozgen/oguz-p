@@ -19,7 +19,7 @@ L.Icon.Default.mergeOptions({
     popupAnchor:  [3, -35]
 });
 
-function MapComp(){    
+function MapComp(props){    
     const [lat,setLat]=useState( 
         -65.05293398570514);
     const [lng,setLng]=useState( -15.0);
@@ -27,20 +27,20 @@ function MapComp(){
     const [position,setPosition]=useState([lat, lng]);
     const [positionCenter,setPositionCenter]=useState([10.0,-15.0]);
     return(
-                     <Map zoomControl={false} center={positionCenter} zoom={zoom} style={{height: '100vh',width:'100%'}}>
-                        <TileLayer
-                        url='https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}'
-                        attribution='Tiles &copy; Esri &mdash;'
-                        minZoom= {1}
-                        maxZoom= {13}
-                        zoom={zoom}
-                        />
-                        <Marker position={position}>
-                        <Popup>
-                             <SkillsetCardComp/>
-                        </Popup>
-                        </Marker>
-                    </Map>
+            <Map zoomControl={false} center={positionCenter} zoom={zoom} style={{height: '100vh',width:'100%'}}>
+                <TileLayer
+                url='https://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}'
+                attribution='Tiles &copy; Esri &mdash;'
+                minZoom= {1}
+                maxZoom= {13}
+                zoom={zoom}
+                />
+                <Marker position={position}>
+                <Popup>
+                      {props.children}
+                </Popup>
+                </Marker>
+            </Map>
     );
 }
 MapComp.propTypes={};

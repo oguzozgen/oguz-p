@@ -3,10 +3,12 @@ import PropTypes, { func } from 'prop-types'
 import { height } from '@material-ui/system';
 import MapComp from '../../components/mapComp/MapComp'
 
-function MapCont(){
+function MapCont(props){
     return(
         <div style={{height:'80vh'}}>
-           <MapComp/>
+           <MapComp>
+               {props.children}
+           </MapComp>
         </div>
     );
 }

@@ -1,3 +1,13 @@
 .leaflet-popup-content p {
     margin:0px;
 }
+
+.leaflet-popup-content a {
+    color: black;
+    text-decoration: none;
+   /* margin-bottom: -12px;
+    margin-top: -4px;*/
+}
+/*.leaflet-container a:hover {
+    cursor: pointer;
+}*/

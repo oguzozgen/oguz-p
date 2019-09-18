@@ -6,11 +6,14 @@ import Typography from '@material-ui/core/Typography'
 import LayoutCont from './containers/layoutCont/LayoutCont'
 import './App.css';
 import MapCont from './containers/mapCont/MapCont';
+import { Routes } from './routes/route';
 
 function App() {
   return (    
       <LayoutCont>
-          <MapCont/>
+          <MapCont>
+             <Routes />
+          </MapCont>
       </LayoutCont>   
   );
 }
