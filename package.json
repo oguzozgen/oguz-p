@@ -2,18 +2,23 @@
   "name": "oguz-p",
   "version": "0.1.0",
   "private": false,
-  "homepage":"https://oguzozgen.github.io/oguz-p/",
+  "homepage": "https://oguzozgen.github.io/oguz-p/",
   "dependencies": {
+    "@material-ui/core": "^4.4.2",
+    "@material-ui/icons": "^4.4.1",
+    "leaflet": "^1.5.1",
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-leaflet": "^2.4.0",
     "react-scripts": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

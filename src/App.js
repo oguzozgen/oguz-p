@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import Button from '@material-ui/core/Button'
+import Box from '@material-ui/core/Box'
+import Paper from '@material-ui/core/Paper'
+import Typography from '@material-ui/core/Typography'
+import LayoutCont from './containers/layoutCont/LayoutCont'
 import './App.css';
+import MapCont from './containers/mapCont/MapCont';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return (    
+      <LayoutCont>
+          <MapCont/>
+      </LayoutCont>   
   );
 }
 
