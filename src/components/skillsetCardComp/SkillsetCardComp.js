@@ -12,6 +12,9 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails'
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemText from '@material-ui/core/ListItemText'
 import './SkillsetCardComp.css'
 
 
@@ -38,6 +41,15 @@ const useStyles = makeStyles(theme => ({
             fontSize: theme.typography.pxToRem(15),
             color: theme.palette.text.secondary,
         },
+        expantionDetail:{
+            paddingTop:0,
+            paddingBottom:0,
+        },
+        expantionListItem:{
+            paddingTop:0,
+            paddingBottom:0,
+            borderLeft: "12px solid #dfdfdf"
+        }
 }));
 function SkillsetCardComp(){
     const classes = useStyles();
@@ -116,16 +128,24 @@ function SkillsetCardComp(){
                                         {item.role}
                                     </Typography>
                                     </ExpansionPanelSummary>
-                                    <ExpansionPanelDetails>
-                                        <ul>
+                                    <ExpansionPanelDetails className={classes.expantionDetail}>
+                                        <List >
                                             {
                                                 item.abilities.map((ability,k)=>{
-                                                    return(
-                                                        <li><Typography key={k} variant="h8">{ability}</Typography></li>
-                                                    );
-                                                })
+                                            return(  
+                                                    <ListItem className={classes.expantionListItem} key={k}>
+
+                                                            <ListItemText                                                         
+                                                            >
+                                                                    <Typography variant="h8">
+                                                                     {ability} 
+                                                                    </Typography>
+                                                            </ListItemText>
+                                                        </ListItem>
+                                                )
+                                            })
                                             }
-                                        </ul>
+                                        </List>
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
                         );
