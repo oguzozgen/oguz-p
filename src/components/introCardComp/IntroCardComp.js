@@ -33,6 +33,9 @@ const useStyles = makeStyles({
         '&:hover': {
             color:'#cacaca'
         }
+    },
+    socialLinks:{
+        marginTop:8
     }
 });
 function IntroCardComp(){
@@ -56,22 +59,22 @@ function IntroCardComp(){
                     <Divider /> 
                     <CardActions className={classes.cardAction}>                    
                          <Button>
-                              <a target="_blank" href=" https://www.upwork.com/o/profiles/users/_~015820b9694de8a2d1/" >
+                              <a className={classes.socialLinks} title="Upwork" target="_blank" href=" https://www.upwork.com/o/profiles/users/_~015820b9694de8a2d1/" >
                                     <img src ={UpworkIcon} />
                               </a>
                         </Button>  
                          <Button>
-                              <a target="_blank" href="https://www.linkedin.com/in/oguzozgen">
+                              <a className={classes.socialLinks} title="Linkedin" target="_blank" href="https://www.linkedin.com/in/oguzozgen">
                                  <Linkedin/>
                                 </a>
                         </Button>   
                         <Button>                       
-                            <a target="_blank" href="https://github.com/oguzozgen" >
+                            <a className={classes.socialLinks} title="Github" target="_blank" href="https://github.com/oguzozgen" >
                                 <Github/>    
                             </a>
                         </Button>
                         <Button>                        
-                            <a target="_blank" href="https://twitter.com/oguzozgenn">
+                            <a className={classes.socialLinks} title="Twitter" target="_blank" href="https://twitter.com/oguzozgenn">
                                 <Twitter/>
                             </a>
                         </Button> 
